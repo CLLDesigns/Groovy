@@ -39,9 +39,12 @@ class NotableOperators {
     println "Substring from index 1 on: " + splitter.substring(1);
     println "Substring from 1-4: " + splitter.substring(1,4);
     // Modifying Strings.
-    def modify = "modify me";
+    def modify = "Modify me";
     println "Original: " + modify;
     println "Remove 'me': " + (modify - 'me');
     println "Split on whitespace: " + modify.split(' ');
+    println "Replace me with you: " + modify.replaceAll('me', 'you');
+    println "Uppercase: " + modify.toUpperCase();
+    println "Lowercase: " + modify.toLowerCase();
   }
 }
